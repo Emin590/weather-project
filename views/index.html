@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,10 @@
     </header>
     <main>
         <form action="/weather" method="POST">
-            <label for="location">Enter a location:</label>
-            <input type="text" id="location" name="location" required>
+            <label for="latitude">Enter a latitude:</label>
+            <input type="text" id="latitude" name="latitude" required>
+            <label for="longitude">Enter a longitude:</label>
+            <input type="text" id="longitude" name="longitude" required>
             <button type="submit">Get Weather</button>
         </form>
         <div id="weather-result">

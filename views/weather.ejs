@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <div class="weather-card">
+            <h2>Weather for <%= location %></h2>
+            <p class="weather-temp">🌡️ Temperature: <span><%= temp %>°C</span></p>
+            <p class="weather-desc">🌤️ <%= description %></p>
+            <a class="back-btn" href="/">&#8592; Back</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Weather App</p>
+    </footer>
+</body>
+</html>
